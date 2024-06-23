@@ -14,5 +14,5 @@ if [[ -d $DOTZSH_DIR ]] && [[ -r $DOTZSH_DIR ]] && [[ -x $DOTZSH_DIR ]]; then
     done
 fi
 
-eval "$(mise activate zsh)"
-eval "$(sheldon source)"
+which mise > /dev/null 2>&1 && eval "$(mise activate zsh)" || echo "mise is not installed"
+which shedon > /dev/null 2>&1 && eval "$(sheldon source)" || echo "sheldon is not installed"
