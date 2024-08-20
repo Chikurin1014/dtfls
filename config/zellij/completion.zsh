@@ -1225,17 +1225,18 @@ _zellij__action__write-chars_commands() {
     _describe -t commands 'zellij action write-chars commands' commands "$@"
 }
 
-_zellij "$@"
+# _zellij "$@"
+compdef _zellij zellij
 function zr () { zellij run --name "$*" -- zsh -ic "$*";}
 function zrf () { zellij run --name "$*" --floating -- zsh -ic "$*";}
 function zri () { zellij run --name "$*" --in-place -- zsh -ic "$*";}
 function ze () { zellij edit "$*";}
 function zef () { zellij edit --floating "$*";}
 function zei () { zellij edit --in-place "$*";}
-function zpipe () { 
+function zpipe () {
   if [ -z "$1" ]; then
     zellij pipe;
-  else 
+  else
     zellij pipe -p $1;
   fi
 }

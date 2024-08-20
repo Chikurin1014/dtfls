@@ -57,5 +57,5 @@ inline = "alias cat=bat"
 [plugins.starship]
 inline = 'eval "$(starship init zsh)"'
 
-[plugins.zellij_completion]
+[plugins.zellij_completions]
 inline = "source ~/.config/zellij/completion.zsh"
