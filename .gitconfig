@@ -1,0 +1,6 @@
+[core]
+editor = "code --wait"
+[init]
+defaultBranch = "main";
+[commit]
+template = "~/.config/git/commit_template";
