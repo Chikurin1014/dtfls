@@ -1,0 +1,3145 @@
+ls
+help ls
+ls | to text
+ls | get name | to text
+help fold
+help foldr
+help foldrl
+help foldl
+ls | get name | reduce
+ls | get name | reduce_by {|x, y| $'$x $y'} | to text
+ls | get name | reduce {|x, y| $'$x $y'} | to text
+ls | get name | reduce {|x, y| $x} | to text
+ls | get name | reduce {|x, y| $'($x) ($y)'} | to text
+lsd
+ls | get name | reduce {|x, y| $'($x)\t($y)'} | to text
+ls | get name | reduce {|x, y| $'($x) ($y)'} | to text
+ls
+ls | get name
+lsd
+version
+bat package.json
+cat package.jon
+cat package.joson
+cat package.json
+open package.json
+open package.json | to text
+^cat package.json
+bat package.json
+help open
+open package.json --raw
+open package.json --raw | describe
+open package.json --raw | to text
+open package.json --raw | to text | describe
+open package.json --raw | to text | bat
+open package.json --raw | bat
+open package.json| bat
+open package.json | bat
+open package.json --raw | bat
+clear
+ls
+clear
+sheldon source
+clear
+starship init
+starship --help
+sarship init
+sarship init nu
+clear
+echo $env.PATH
+echo $env.Path
+echo $env.Path | bat
+echo $env.Path | to text | bat
+clear
+ls
+clear
+open .wezterm.lua
+code .wezterm.lua
+ls
+ls | bat
+lsd
+clear
+lsd
+cd AppData\
+lsd
+cd Roaming
+ls
+clear
+lsd
+cd nushell
+lsd
+code .
+alias cat [x] {open $x --raw}
+help alias
+alias cat = open --raw | bat
+alias cat [x] = open --raw $x | bat
+alias cat = open --raw
+ls
+cat config.nu
+clear
+cat config.nu | bat
+bat config.nu
+clear
+config.startup
+config get startup
+help config
+$env.startup
+$env
+clear
+ls
+$env.Path
+$env.Path | bat
+$env.Path | to text | bat
+clear
+help to
+$env.Path | to md | bat
+$env.Path | to csv | bat
+$env.Path | to toml | bat
+$env.Path | to json | bat
+$env.Path | to yaml | bat
+clear
+help to
+ls | to csv
+ls | to md
+ls | to json
+clear
+exit
+ls
+clear
+cd Documents\
+ls
+clear
+ls
+clear
+cd MyProjects\
+clear
+ls
+clear
+ls
+$env
+clear
+exit
+ls
+clear
+cd Documents
+cd MyProjects\
+cd Study\
+lsd --tree
+clae
+clear
+shutdown
+shutdown /s /t 0
+help ls
+ls -l
+help ls -l
+ls
+rm package-lock.json
+rm package.json
+ls
+less
+ls | less
+ls | to text | less
+ls | to json | less
+ls | get name | to text | less
+ls | get name | less
+help l
+shutdown /s /t 0s
+clear
+history
+history[:4]
+history | [:4]
+history 1
+history | get 1
+history | get [1:5]
+history | get 1:5
+history | get 1..5
+history | get 1 or 2
+history | get 1
+history | get [1,2]
+history | select $in < 5
+history | where $it < 5
+history | where $it.index < 5
+history | where index < 5
+clear
+history | where index < 10
+gch
+clear
+ghci
+clear
+winget search mise
+winget search rtx
+clear
+cd AppData\Roaming\nushell\
+ls
+code .
+grid
+help grid
+ls | grid
+lg
+ls | grid
+ls ~ | grid
+ls ~ -s | grid
+help grid
+clear
+ls | gid
+ls | grid
+clear
+themes.nu
+./themes.nu
+help config
+help config nu
+config nu
+clear
+config nu --default
+clear
+help source
+source config.nu
+help use
+use themes.nu
+use theme.nu
+source config.nu
+clear
+source theme.nu
+source config.nu
+exit
+exit
+exit
+exit
+$env.config
+config nu
+$env.config
+$env.config | get theme
+$env.config | get color_config
+exit
+source config.nu
+$env.config | get color_config
+clear
+ls | grid ^c
+ls | grid -c
+ls | grid --color
+ls ~ -s | grid -c
+clear
+cd ~
+ls | grid -c
+ls | grid -c | describe
+(ls | grid -c) Documents
+source config.nu
+$env.path
+source $env.config
+exit
+exit
+cd C:\Users\Chikurin\AppData\Roaming\nushell\config.nu
+cd C:\Users\Chikurin\AppData\Roaming\nushell\
+clear
+source config.nu
+help source
+cd ..
+source nushell/config.nu
+exit
+cd ~
+exit
+clear
+ls
+clear
+help ls
+null | ls
+clear
+null | ls | grid -c
+lsd
+clear
+ls | grid -c
+lsd -a
+clear
+ls -a
+clear
+ls -a | grid -c
+lsd -a
+which NTUSER.DAT
+which NTUSER.DAT -a
+help which
+which nu
+dir -a
+^dir
+^ls
+ls
+exit
+exit
+exit
+ls -a
+clear
+code
+exit
+exit
+exit
+$env.config | get ls
+source config.nu
+$env.config | get ls
+$nu.config-path
+help use
+help source
+$env.config | get ls
+$env
+exit
+$nu.config-path
+use '$nu.config-path'\..\cfg.nu
+config
+cfg config
+clear
+use '$nu.config-path'\..\cfg.nu
+$nu.config-path
+clear
+ls
+$env.config | get ls
+$nu.config-path
+$nu.config-path\..
+'$nu.config-path\..'
+'$nu.config-path'\..
+dirname
+path dirname
+help path dirname
+help path
+help path dirname
+source config.nu
+help path dirname
+path dirname $nu.config-path
+$nu.config-path | path dirname
+$'($nu.config-path | path dirname)\a'
+$'($nu.config-path | path dirname)\cfg.nu'
+use $'($nu.config-path | path dirname)\cfg.nu'
+$nu.config-path | path dirname
+ls
+clear
+$env.config | get ls
+exit
+exit
+$nu.home
+$env.home
+$env.HOME
+clear
+exit
+$env | get PROMPT_INDICATOR
+ls
+source
+exit
+t
+exit
+ls
+clear
+ls
+clear
+ls -s
+ls
+help ls -s
+help ls
+clear
+lg
+lg -a
+clear
+help ls
+alias
+help alias
+ls -l
+ls -la | grid -c
+ls -la
+ls -la | select [name, readonly]
+ls -la | select [name, target]
+ls -la | select [name, target] | where name =~ '^NTUSER*'
+ls -la | select [name, target] | where name =~ '^[ntuser|NTUSER]*'
+ls -la | select [name, target] | where name =~ '^(ntuser|NTUSER)*'
+ls -la | select [name, target] | where name =~ '^NTUSER*'
+ls -la | select [name, target] | where name =~ '^ntuser*'
+exit
+exit
+exit
+ls_grid -a
+ls_grid -f
+help trim
+help str trim
+lg -a
+ls_grid -f
+ls_grid -a
+exit
+help ls_grid
+ls_grid -a
+ls_grid -f
+exit
+ls_grid -a
+ls_grid -f
+clea
+exit
+ls_grid -f
+help ls_grid
+help ls
+exit
+ls_grid
+ls_grid -f
+help ls
+ls_grid -a
+ls | sort-by type name
+clear
+ls -f | sort-by type name
+ls_grid
+exit
+exit
+ls_grid
+exit
+ls_grid
+lg
+clear
+lg
+lg -f
+lg -a
+clear
+exit
+exit
+lg
+ls . -h
+ls . -hexit
+exit
+lsg
+lg
+exit
+lg
+exit
+lg
+lg -h
+lg --help
+lg -h
+lg --help
+exit
+lg --help
+exit
+lg -a
+exit
+clear
+ls | grid -c
+ubuntu
+clear
+ls
+clear
+ls | gric -c
+clear
+exit
+alias
+clear
+lg
+cd Documents\
+l
+lg
+clear
+lg
+cd MyProjects\
+lg
+clear
+lg
+cd Study
+lg
+cd 2nd-grade\
+lg
+tree
+clear
+lg
+cd McEx
+clear
+lg
+lsd --tree
+clear
+help tree
+tree --help
+use std
+std tree --help
+help str tree
+help std tree
+use std tree
+clear
+shutdown /s /t 0
+clear
+ls
+celar
+clear
+ls | grid -c
+clear
+ls
+clear
+ls
+cear
+clear
+cd Documents
+ls
+exit
+exit
+cd Documents
+ls
+cd MyProjects
+ls
+ls | gird -c
+ls | grid -c
+clear
+exit
+ls
+clear
+clera
+exit
+cd Documents
+ls
+cd MyProjects
+ls
+ls -l
+ls | grid -c
+clear
+ls | to text
+clear
+ls | get name | to text
+ls
+clear
+ls -l
+ls -l | get name
+ls -l | get name, created
+ls -l | get name created
+ls -l | select [get, name]
+ls -l | select [$in.get, $in.name]
+ls -l | select get
+clear
+ls -l | select $in
+ls -l | where $it
+ls -l | select $it
+ls -l | select $it.name
+clear
+ls -l | get $it.name
+ls -l | select name
+clear
+ls -l | select name
+ls -l | select name created
+ls -l | select [name created]
+clear
+ls -l 
+ls -l | select name size modified
+ls -l | select name size modified | to json
+clear
+ls -l | select name size modified | to md
+ls -l | select name size modified | to yaml
+clear
+ls -l | select name size modified | to toml
+clear
+help to
+clear
+ls
+clear
+ls
+ls | to text
+clear
+ls
+clear
+ls
+exit
+clear
+exit
+ubuntu
+exit
+code .wezterm.lua
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+exit
+exit
+clear
+ls
+clear
+exit
+exit
+clear
+ls
+clear
+ls
+exit
+ls
+clear
+ls
+clear
+ls
+pwsh
+clear
+ls
+clear
+ls
+clear
+exit
+ls
+l
+ls
+clear
+ls
+clear
+ls
+clear
+lg
+mkdir .config/wezterm
+cp .wezterm.lua .config/wezterm/wezterm.lua
+mv .wezterm.lua _wezterm.lua
+ls | grid ^c
+ls | grid -c
+cd .config/wezterm
+exit
+exit
+lg
+clear
+lg
+code .
+r
+$env.config | get background
+$env.config
+$env.config | get background
+clear
+$env.config
+exit
+ls
+exit
+exit
+ls
+clear
+exit
+ls
+clear
+ls
+exit
+ls
+exit
+exit
+exit
+shutdown /s /t 0
+ls
+clear
+pwsh
+clear
+rm _wezterm.lua
+ls
+clear
+lg
+rm .arduinoIDE
+rm -r .arduinoIDE
+lg .rustup
+clear
+lg
+cd .config
+lg
+cd ..
+mv .config/AutoHotkey AppData\Roaming\AutoHotkey
+cp .config/wezterm AppData\Roaming\wezterm
+cp .config/wezterm AppData\Roaming\wezterm -r
+mv .config/wezterm .config/_wezterm
+exit
+ls -a
+clear
+attrib --help
+help attrib
+clear
+attrib
+lg
+attrib .android +h
+lg
+attrib
+ls -a | grid -c
+clear
+lg
+attrib .aws +h
+lg
+ls -a | where name = '^.*' | grid -c
+ls -a | where name =~ '^.*' | grid -c
+ls -a | where name =~ '^.*'
+ls -a | select name =~ '^.*'
+ls -a | where name =~ '^.*'
+ls -a | where $it.name =~ '^.*'
+ls -a | where $it.name =~ '.*'
+ls -a | where $it.name =~ '.'
+clear
+ls | where $it =~ '.config'
+ls | where $it.name =~ '.config'
+ls | where $it.name == '.config'
+ls | where $it.name == '^.*config'
+ls | where $it.name == '^.*config$'
+ls | where $it.name == '^.config$'
+ls | where $it.name =~ '^.config$'
+ls | where $it.name =~ '^.*config$'
+ls | where $it.name =~ '^.*$'
+ls | where $it.name =~ '^.*c$'
+ls | where $it.name =~ '^.*c*$'
+ls | where $it.name =~ '^.*config*$'
+ls | where $it.name =~ '^.*confi*$'
+ls | where $it.name =~ '^.*conf*$'
+ls | where name == '.config'
+ls | where name == '.*config'
+ls | where name == '.*config$'
+ls | where name == '^.*config$'
+clear
+ls | where name starts-with '.'
+ls | where name starts-with '.' | select name
+ls | where name starts-with '.' | select name | select echo $it
+ls | where name starts-with '.' | select name | select echo $in
+ls | where name starts-with '.' | select name | select {|it| echo $it }
+ls | where name starts-with '.' | select name | each {|it| echo $it }
+ls | where name starts-with '.' | select name | each $it
+ls | where name starts-with '.' | get name
+ls | where name starts-with '.' | get name | each (echo $it)
+ls | where name starts-with '.' | get name | each (echo $in)
+ls | where name starts-with '.' | get name | each {|it| echo $it }
+ls | where name starts-with '.' | get name | each {|it| echo attrib $it +h }
+ls | where name starts-with '.' | get name | each {|it| attrib $it +h }
+ls
+ls -a
+clear
+history
+clear
+history | where index < 10
+history | where index > 650
+ls | where name =~ '^.'
+lg
+lsd
+rm _lesshst
+clear
+ls -a
+clar
+clear
+attrib
+ls -h
+clear
+attrib .aws
+$env.APPDATA
+cd $env.APPDATA\nushell
+cd ($env.APPDATA)\nushell
+cd $'($env.APPDATA)\nushell'
+clear
+ls
+lg
+code .
+help editor
+editor
+clear
+exit
+code .
+exit
+wezterm --help
+wezterm serial
+exit
+wezterm start
+wezterm imgcat
+wezterm shell-completion
+wezterm shell-completion --shell nu
+wezterm shell-completion --shell zsh
+clear
+help wezterm
+clear
+wezterm --help
+wezterm replay
+wezterm cli
+clear
+exit
+wezterm
+exit
+clear
+lg .config
+clear
+lg
+lg Downloads
+ls Downloads
+clear
+code $nu.config
+code $nu.config-path
+code $'($nu.config-path)\..'
+lg Downloads
+clea
+clear
+exit
+lg
+lg Downloads
+ls
+clear
+ls -l Downloads
+lg
+clear
+lg Downloads
+ls Downloads | grid c
+ls Downloads | grid -c
+ls -s Downloads | grid -c
+help ls
+lg Downloads
+exit
+lg
+cd Documents
+lg
+lg MyProjects
+lg MyProjects\Study
+lg MyProjects\Study\2nd-grade
+cd MyProjects\Study\2nd-grade
+lg
+clear
+cd ~
+cd $env.APPDATA
+ls | get name == 'wezterm'
+lg
+cd wezterm
+ls
+cd wezterm
+ls
+cd ..
+cd wezterm\wezterm
+ls
+lg
+code themes
+ls
+clear
+exit
+ls
+clear
+exit
+code $nu.config-path
+clear
+cd $env.APPDATA
+cd wezterm
+mv wezterm ../wezterm
+cd ..
+mv wezterm/wezterm wezterm
+mv wezterm/wezterm wezterm -r
+mv wezterm/wezterm wezterm
+mv wezterm/wezterm wezterm -f
+mv wezterm _wezterm
+cp _wezterm/wezterm ./wezterm -r
+lg
+exit
+cd $env.APPDATA
+rm -r _wezterm
+exit
+cd $env.APPDATA
+lg
+cd wezterm
+ls
+code .
+exit
+eixt
+exit
+lg
+ls -a | get name == '.wezterm.lua'
+ls -a | get name =~ '.wezterm.lua'
+ls -a | where name =~ 'wezterm'
+cd $env.APPDATA
+mv wezterm _wezterm
+lg
+mkdir wezterm
+mv _wezterm wezterm/wezterm
+exit
+cd $env.APPDATA
+code wezterm
+exit
+$env.XDG_CONFIG_HOME
+wezterm --config
+cd $env.APPDAT
+cd $env.APPDATA
+clear
+ls
+mv wezterm/wezterm ~/.config/
+mv wezterm/wezterm ~/.config/wezterm
+cd ~
+celar
+ls
+clear
+lg
+cd .config
+lg
+lg wezterm
+code wezterm
+cd .config
+code wezterm
+mv wezterm $'($env.APPDATA)\wezterm'
+exit
+cd $APPDATA
+cd $env.APPDATA
+celar
+clear
+lg
+lg wezterm
+mv wezterm\wezterm .\wezterm -f
+mv wezterm\wezterm .\ -f
+mv wezterm\wezterm\* .\wezterm
+lg wezterm
+ls -s wezterm
+exit
+mv $'($env.APPDATA)\wezterm\*' .config\wezterm\
+mkdir .config\wezterm
+mv $'($env.APPDATA)\wezterm\*' .config\wezterm\
+exit
+clear
+exit
+clear
+clear
+clear
+ls
+l
+celar
+clear
+lg
+ls
+clear
+lg
+exit
+exit
+exit
+clear
+lg
+exit
+shutdown /s /t 0
+lg
+ls
+clear
+ls
+clear
+ls
+clear
+ls | where name starts-with '.'
+ls -a | where name starts-with '.'
+clear
+attrib .aws
+attrib --help
+attrib
+attrib H
+attrib -H
+ls
+ls | where name starts-with '.'
+ls | where name starts-with '.' | get name | each {|it| attrib $it +H }
+ls
+ls -a
+ls -h
+ls -ld
+ls -l -d
+ls -lD
+exit
+ubuntu
+exit
+shutdown /r /t 0
+which code
+exit
+ubuntu
+exit
+exit
+winget update
+winget uninstall microsoft.vcredist.2010.x64
+winget update
+clear
+ls
+exit
+shutdown /s /t 0
+ubuntu
+exit
+ubuntu
+shutdown /s /t -
+shutdown /s /t 0
+py
+cd Downloads\report\
+code .
+exit
+edit
+eixt
+exit
+lg
+lg -a
+clear
+ls -a
+clear
+lg
+exit
+exit
+ubuntu
+exit
+lg
+lsd
+lg
+clear
+ls
+lg
+clear
+lg
+cd Documents\
+lg
+cd ..
+lg
+cd AppData\Roaming
+lg
+cd ls ~\.config\
+ls ~/.config
+clear
+lg
+cd AutoHotkey\
+lg
+code startup.ahk
+exit
+lg
+exit 
+lg
+cd Documents\
+lg
+ls | get name
+clrea
+clear
+ls | get name
+cd Notes
+lg
+ls | get name
+lg
+ls pdf
+ls CatchRobo | get name type
+ls CatchRobo | select name type
+ls CatchRobo | select name type | to json
+lg
+exit
+exit
+exit
+ext
+exit
+lg
+exit
+ls
+ls | grid -c
+lsd
+ls | grid -c
+ls
+ls | to json
+ls | to csv
+ls | to text
+ls | to md
+ls
+cd Documents\Noted
+cd Documents\Notes
+ls
+ls | to md | save note.md
+ls | to md | save note.md -f
+code note.md
+ls | where name starts-with '.' | to md | save note.md -f
+code note.md
+ls | where name starts-with '.'
+ls | where name starts-with '.' | to text
+ls | where name starts-with '.' | get name | to text
+ls | get name | to text
+$env.config
+clear
+$env.config
+$env
+$env.PATH
+$env.Path
+$env.Path | to json
+$env.Path | to md
+$env.Path | to csv
+$env.Path | to yaml
+$env.Path | to toml
+$env.Path
+clear
+lg
+clear
+lg
+cd ..
+lg
+cd MyProjects\
+lc
+lg
+clear
+lg
+cd ../Notes
+lg
+cd CatchRobo
+lg
+cd Mecha_rule\
+lg
+cd ..
+cd timing_belt\
+lg
+cd ..
+lg
+cd pdf
+lg
+cd ~
+lg
+cd Downloads
+lg
+cd RobotCameraman
+l
+lg
+cd src
+lg
+format
+date
+date humanize
+date now
+date now | format
+format date now
+clear
+lg
+cat main.cpp
+bat main.cpp
+open main.cpp
+open main.cpp | bat
+bat main.cpp
+clear
+bat main.cpp
+open main.cpp
+clear
+open main.cpp | bat
+bat main.cpp
+open main.cpp | clip
+notepad
+code
+cd ~\Documents\Notes
+lg
+open note.md
+open note.md | clip
+ls | to md | clip
+clip
+help clip
+clip /?
+echo clip
+echo CLIP
+echo $CLIP
+clear
+ubuntu
+clear
+^clip
+clip
+save -h
+$env
+$env.HOME
+$env | to json
+clear
+$env | to json
+clear
+$env | to csv
+clear
+$env | to yaml
+clear
+$env | get HOME
+clear
+exit
+ls
+clear
+lg
+code
+ls -a
+clear
+exir
+exit
+list disk
+clear
+exit
+ubuntu
+exit
+ifconfig
+winget install typst.typst
+typst --help
+exit
+which typst
+typst --help
+cd ~\Documents\MyProjects\Study\
+ls
+cd ..
+ls
+cd Practice
+ls
+mkdir Typst
+cd Typst\
+clear
+ls
+typst init hello_world
+typst init @hello_world
+typst init
+typst init --hel@
+typst init --help
+clear
+typst init --help
+typst --help
+mkdir hello_world
+cd hello_world\
+touch --help
+touch a.typ
+typst compile a.typ
+ls
+code .
+typst compile a.typ
+exit
+cd Documents\MyProjects\Practice\Typst\
+ls
+mkdir sand_box
+code sand_box
+typst compile main
+typst compile main.typ
+exit
+winget install --id=EdrawSoft.EdrawMax  -e
+edrawmax
+exir
+exit
+exit
+winget uninstall edrawmax
+exit
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+shutdown /s /t 0
+ubuntu
+exit
+tmux
+uuntu
+ubuntu
+eixt
+exit
+ubuntu
+exit
+which gcc
+exit
+clear
+ubuntu
+exit
+ubuntu
+exit
+diskpart
+exit
+cd Z:\EFI
+exit
+code .
+ubuntu
+exit
+bash
+zsh
+exit
+wsl --list --online
+wsl update
+cd Downloads\
+lsd
+clear
+lg
+winget uninstall lsd
+lsd
+clear
+lg
+wsl --import NixOs .\NixOs\ nixos-wsl.tar.gz --version 2
+wsl --import NixOS .\NixOS\ nixos-wsl.tar.gz --version 2
+lg
+rm -rf NixOs
+lg -a
+ls -a
+wsl -d NixOS
+lg
+help rm
+rm --force NixOs\
+rm -r --force NixOs\
+exit
+lg
+ls -a | grid -c
+cd Downloads\
+lg
+clear
+lg
+rm -rf NixOs\
+wsl --import NixOS .\NixOS\ nixos-wsl.tar.gz --version 2
+lg
+wsl --list
+wsl --help
+wsl --uninstall NixOS
+wsl --list
+wsl --unregister NixOS
+wsl --list
+docker-desktop-data
+wsl -d docker-desktop-data
+wsl --update
+wsl --install --no-distribution
+wsl --list
+wsl --import nixos .\NixOS\ nixos-wsl.tar.gz --version 2
+nixos
+wsl -d nixos
+bash
+cd ~
+clear
+exit
+nixos
+clear
+wsl -d nixos
+exit
+bash
+clear
+wsl -d nixos
+exit
+$env.config
+$env.path
+$env.Path
+cd .config\
+lg
+ls -a
+cd ..
+ls -a
+cd .local\
+lg
+ls -a
+cd ..
+ls -a
+cd AppData\Roaming
+lg
+cd nushell\
+lg
+code .
+exit
+lsg
+lg
+lsg
+exit
+echo "" > $env.HOME\run_wsl2_at_startup.vbs
+echo "" > {$env.HOME}\run_wsl2_at_startup.vbs
+echo "" > ($env.HOME)/run_wsl2_at_startup.vbs
+cd $env.APPDATA/a
+cd $env.APPDATA
+cd ~
+clear
+lsg
+ls -a
+cd Downloads\
+lsg
+cd ..
+echo "" > ($env.HOME)/run_wsl2_at_startup.vbs
+echo "" > ~/run_wsl2_at_startup.vbs
+echo "" | save ~/run_wsl2_at_startup.vbs
+cat run_wsl2_at_startup.vbs
+clear
+help get
+clear
+open run_wsl2_at_startup.vbs
+open run_wsl2_at_startup.vbs --raw
+code run_wsl2_at_startup.vbs
+taskschd.msc
+control schedtasks
+echo %USERPROFILE%
+echo $env.USERPROFILE
+wsl -d nixos
+wsl ~
+cd \\wsl$
+cd \\wsl$\\nixos
+lsg \\wsl$\nixos
+cd \\wsl$\nixos
+clear
+lsg
+cd home\nixos\
+clear
+lsg
+wsl ~
+wsl --list
+wsl --setdefault nixos
+wsl --list
+nixos
+wsl ~
+bash
+nix-shell
+clear
+wsl --list
+wsl ~
+wsl --shutdown
+wsl status
+wsl --status
+wsl ~
+cd ../..
+lsg
+cd run
+lsg
+cat current-system
+clear
+open current-system
+lsg
+wsl -d nixos
+clear
+cd C:\Windows\system32
+lsg
+clear
+ls
+clear
+ls -a | grep nixos
+wsl -d nixos
+cd ~
+clear
+wsl -d nixos
+wsl -d nixos run ls
+wsl -d nixos
+cd \\wsl$\nixos\home\nixos\.config\nixpkgs\
+lsg
+code config.nix
+wsl -d nixos
+cd ..
+lsg
+clear
+wsl -l
+wsl -t nixos
+wsl -d nixos
+bash
+cd ~
+wsl -d nixos
+shutdown /s /t 0
+lsg
+wsl -d nixos
+exit
+ls
+cear
+clear
+lsg
+cd Documents
+lsg
+tree --help
+clear
+tree .
+clear
+lsg
+help ls
+ls | help
+clear
+help ls
+clear
+ls
+cleat
+lsg
+clear
+lsg
+cd MyProjects\
+lsg
+cd Practice
+lsg
+$env.USER
+$env.USERNAME
+clear
+lsg
+clear
+cd ..
+lsg
+clear
+lsg
+cd ~
+clear
+lsg
+clear
+clear
+wsl -d nixos
+shutdown /s /t 0
+exit
+wsl list
+wsl ls
+wsl --help
+wsl 00list
+clear
+wsl --list
+wsl --unregister nixos
+wsl --uninstall nixos
+wsl --list
+cd Downloads\
+lsd
+clear
+lsg
+rm -rf NixOS
+rm MediaCreationTool_Win11_23H2.exe
+rm ubuntu-23.10.1-desktop-amd64.iso
+claer
+clear
+lsg
+rm nixos-wsl.tar.gz
+wsl --install
+wsl --install -d Ubuntu
+lsg
+ubuntu
+clear
+ubuntu
+wsl -d ubuntu
+clear
+ubuntu
+which ubuntu
+exit
+ubuntu
+clear
+winget upgrade --all
+winget upgrade discord
+winget ls
+clear
+winget update
+winget upgrade Discord.Discord
+winget upgrade --all
+winget upgrade
+winget search KiCad
+winget install --help
+winget install --uninstall-previous KiCad.KiCad
+shutdown /s /t 0
+ubuntu
+shutdown /r
+shutdown /r /t 0
+ubuntu
+wsl --update
+ubuntu
+exit
+ubuntu
+exit
+code .
+exit
+ubuntu
+shutdown /s /t 0
+ubuntu
+exit
+ubuntu
+clear
+ubuntu
+shutdown /s /t 0
+ubuntu
+shutdown /s /t 0
+ubuntu
+shutdown /r /t 0
+ubunt
+ubuntu
+exit
+ubuntu
+shutdown /s /t 0
+code .
+exit
+ubuntu
+exti
+shutdown /s /t 0
+exit
+ubuntu
+exit
+ubuntu
+ls
+clear
+lsg
+cd AppData\Roaming\wezterm\
+lsg
+lsg ~/.congif
+lsg $HOME/.config
+lsg $env.HOME/.config
+lsg ($env.HOME)/.config
+lsg "($env.HOME)/.config"
+cd ~
+lsg .config
+lsg .config/wezterm
+code .config/wezterm
+exitt
+exiy
+exit
+ubuntu
+exit
+ubuntu
+shutdown /s /t 0
+cd .config
+ls
+cd wezterm
+ls
+code .
+shutdown /r /t 0
+attrib
+exit
+cd Documents\MyProjects\
+clear
+ls
+tree
+clear
+tree | to json | bat
+help tree
+tree --help
+tree /?
+clear
+ls --help
+clear
+help tee
+1..100 | tee { each { print } } | math sum | wrap sum
+clear
+1 | wrap one
+exit
+ubuntu
+shutdown /s /t 0
+lsg
+lg
+clear
+winget search lazygit
+winget install lazygit
+exit
+ls
+clera
+clear
+lsg
+winget search tmux
+winget search dmux
+which nvim
+winget show tmux
+winget show trzsz
+exit
+ubuntu
+clear
+ls
+clear
+lsg
+nu --version
+which hello
+exit
+ls
+clear
+which vim
+which nvim
+clear
+code .config\wezterm\
+exit
+clear
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+clear
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+exit
+code .
+python calc.py
+code .
+dotnet
+dotnet Program
+dotnet Program.cs
+clear
+dotnet --help
+dotnet build
+dotnet run
+exit
+dotnet run
+ubuntu
+exit
+1 + 1
+58.7 / (1.692 * 1.692)
+exit
+exit
+exit
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+exit
+which git
+git --version
+git --version | get path
+git --version | get it.path
+clear
+help get
+which git | $in.path
+which git | get path.0
+which git | get path
+clear
+cd Documents/Notes
+ls
+mkdir hello-git
+cd hello-git\
+clear
+git init
+ls -a
+cd ..
+rm -rf hello-git\
+exit
+ubuntu
+exit
+ubuntu
+ecit
+exit
+ubuntu
+shutdown /s /t 0
+ubuntu
+shutdown /s /t 0
+ubuntu
+shutdown /s /t 0
+exit
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+exit
+usbipd --list
+usbipd list
+usbipd attach --help
+usbipd --wsl liset
+usbipd --wsl list
+usbipd list
+usbipd attach --wsl --busid 2-3
+gsudo usbipd attach --wsl -b 2-
+gsudo usbipd attach --wsl -b 2-3
+usbipd attach --wsl --busid 2-3
+usbipd attach --wslclear
+clear
+usbipd wsl list
+usbipd bind -b 2-3
+winget upadate usbipd
+winget install usbip
+winget install usbipd
+usbipd bind -b 2-3
+usbipd attach -b 2-3
+usbipd attach -w -b 2-3
+usbipd list
+usbipd detach -b 2-3
+usbipd attach -w -b 2-3
+usbipd detach -b 2-3
+exit
+gsudo
+usbipd list
+usbipd attach -w -b 2-3
+usbipd detach -b 2-3
+exit
+ubuntu
+shutdown /s /t 0
+exit
+ubuntu
+exit
+ubuntu
+exit
+gsudo usbipd list
+gsudo usbipd attach -w -b 2-2
+exit
+winget update
+winget update all
+winget update --all
+winget update
+exit
+code .
+ls
+ls | where name starts-with '.'
+exit
+powershell
+exit
+usbipd list
+exit
+shutdown /?
+shutdown /s /t 0
+winget update --all
+exit
+winget update
+clear
+ubuntu
+clear
+ubuntu
+shutdown /s /t 0
+ubuntu
+exit
+winget search arc
+winget show thebrowsercompaney.arc
+winget show thebrowsercompany.arc
+winget search thebrowsercompany.arc
+winget info thebrowsercompany.arc
+winget show thebrowsercompany.arc
+winget install thebrowsercompany.arc
+exit
+ubuntu
+exit
+usbipd list
+usbipd lisy
+usbipd list
+clear
+usbipd list
+usbipd attach -w -b 2-3
+ubuntu
+exit
+exit
+ubuntu
+shutdown /s /t 0
+ubuntu
+shutdown /s /t 0
+ubuntu
+clear
+usbipd list
+usbipd attach -w -b 2-3
+exit
+shutdown /s /t 0
+winget update
+winget update --all
+winget update
+winget update --include-unknown
+winget update --all --include-unknown
+winget update
+winget update discord
+shutdown /r /t 0
+winget update
+wxit
+exit
+ubuntu
+exit
+ubuntu
+exit
+:
+exit
+ubuntu
+clear
+ls
+clear
+ls | select name
+clear
+ls | get name
+clear
+cd Documents\
+ls
+clear
+cd MyProjects\
+ls
+ls | get name
+ls | select name
+ls | select name type
+ls | get name type
+clear
+ls | flatten
+ls | get name type | flatten
+ls | select name type | flatten
+help from
+help for
+help while
+ls | select name type siz
+ls | select name type size
+clear
+ls
+help ls
+ls -l
+ls -l | select name type size modified
+ls | get name == type
+help select
+help pick
+help get
+help Path
+$env | get HOME
+$env | get Path
+$env | get Path | to json
+help json
+help to
+clear
+$env | get Path | to yaml
+$env | get Path | to toml
+$env | get Path | to yaml
+clear
+$env | get Path | to md
+clear
+$env | get 0 1 2 3
+$env | get column.0
+$env | get column == 0
+$env | get column
+clear
+$env | get 0
+$env
+$env | get Path | get 0
+clear
+$env | get Path | get 0 1 2 3
+$env | get name
+$env | select name
+$env
+clear
+exit
+ubuntu
+exit
+shutdown /s /t 0
+ubunt
+ubuntu
+exit
+ubuntu
+clear
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+ubunti
+ubuntu
+shutdown /s /t 0
+clion
+clion64.exe
+$env.Path
+CLion
+ls ~/CLion
+ls ~/%CLion%
+ls ~\%CLion%
+$env.Path
+ls
+ls -a
+$env.CLion
+ls $env.CLion
+ls ($env.CLion)
+$env.CLion
+C:\'Program Files'\JetBrains\'CLion 2024.1.2'\bin
+cd C:\'Program Files'\JetBrains\'CLion 2024.1.2'
+cd C:\'Program Files'\JetBrains
+cd C:\'Program Files'
+cd `C:\Program Files\`
+ls
+cd JetBrains\
+ls
+cd `CLion 2024.1.2\`
+ls
+ls bin
+cd bin
+clion64.exe
+.\clion64.exe
+clion64.exe
+.\clion64.exe
+cd ~
+$env.Path
+$env.Path | select end-with 'bin'
+$env.Path | where str ends-with 'bin'
+$env.Path | where {$x| x | str ends-with 'bin'}
+$env.Path | where {|x| $x | str ends-with 'bin'}
+help str
+$env.Path | where {|x| $x | str contains 'CLion'}
+$env.Path | where {|x| $x | str ends-with 'bin'}
+mkdir -p .clion\bin
+mkdir .clion\bin
+ls .clion
+attrib -H .clion
+attrib .clion
+attrib +H .clion
+attrib .clion
+ls
+ls | get name 
+ls | get name | where {|x| $x starts-with '.'}
+help for
+help foreach
+clear
+help for
+help in
+ls | get name | where {|x| $x starts-with '.'} | print
+ls | get name | where {|x| $x starts-with ''} | print
+ls | get name | where {|x| $x starts-with ''} | select {|x| print $x}
+ls | get name | where {|x| $x starts-with ''} | into value | print
+for $(ls | get name | where {|x| $x starts-with ''} | into value)
+for $x in ls | get name | where {|x| $x starts-with ''} | into value
+for $x in (ls | get name | where {|x| $x starts-with ''} | into value)
+for $x in $(ls | get name | where {|x| $x starts-with ''} | into value)
+ls | get name | where {|x| $x starts-with ''}
+ls | get name | where {|x| $x starts-with '.'} | each {|x| attrib +H $x}
+ls
+ls -h
+ls -a | w
+ls -a | where name starts-with '.'
+ls -a | where !(name starts-with '.')
+ls -a | where (name starts-with '.')
+clear
+ls
+cd .clion
+ls
+$env.CLion
+$env.Path
+$env.Path to text
+$env.Path | to text
+clear
+config
+config env
+config set
+config path
+help config
+$env
+$env.Path
+config reset
+$env.Path
+$env.Path | where {|x| $x | str contains 'CLion'}
+exit
+$env.Path
+ks
+$env.Path
+ls
+rm -rf .clion
+clion64.exe
+clion
+clion64.exe
+clion64.exe --help
+clion --help
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+exit
+exit
+wsl list
+wsl --list
+clear
+wsl --help
+wsl --unregister Ubuntu
+wsl --list
+wsl --install
+ubuntu
+wsl --unregister Ubuntu
+ubuntu
+wsl --unregister Ubuntu
+wsl --install -d Ubuntu
+wsl --list
+wsl --help
+wsl -s Ubuntu
+wsl --list
+wsl --export Ubuntu UbuntuCopy.tar
+ls
+mkdir wsl_manual_install
+wsl --import Ubuntu-ROS2 .\wsl_manual_install\ UbuntuCopy.tar
+wsl -l -v
+wsl -l
+wsl -l -v
+ubuntu
+wsl -d Ubuntu-ROS2
+use
+clear
+$env.USERNAME
+wsl -d Ubuntu-ROS2
+wsl --setdefault Ubuntu-ROS2
+wsl -d Ubuntu-ROS2
+ubuntu
+wsl -l -v
+wsl --setdefault Ubuntu
+wsl -l -v
+wsl -d Ubuntu-ROS2 --help
+wsl -d Ubuntu-ROS2 --user chikurin
+wsl -l -v
+wsl -d Ubuntu-ROS2
+wsl -d Ubuntu-ROS2 --user chikurin
+wsl -l
+wsl --help
+wsl --unregister Ubuntu
+wsl --unregister Ubuntu-ROS2
+wsl --install -d Ubuntu
+wsl --export Ubuntu UbuntuCopy.tar
+wsl --import Ubuntu-ROS2 .\wsl_manual_install\ UbuntuCopy.tar
+wsl -l
+wsl --set-default Ubuntu
+wsl -l -v
+ubuntu
+wsl -l -v
+wsl -d Ubuntu-ROS2 --u chikurin
+wsl -d Ubuntu-ROS2 -u chikurin
+ls -a
+clear
+ls -a wsl_manual_install\
+clear
+wsl -d Ubuntu-ROS2 -u chikurin ~
+wsl ~ -d Ubuntu-ROS2 -u chikurin
+wsl ~
+wsl ls
+wsl clear
+wsl -d Ubuntu-ROS2 -u chikurin
+wsl -l -v
+ubuntu
+shutdown /s /t 0
+ubuntu
+ubunt
+ubuntu
+wsl -l -v
+ubuntu
+wsl -d Ubuntu-ROS2 -u chikurin
+exit
+wsl -d Ubuntu-ROS2 -u chikurin
+exit
+ubuntu
+wsl -d Ubuntu-ROS2 -u chikurin
+exit
+ls
+clear
+wsl --list
+wsl -l -v
+wsl --help
+wsl -l -o
+wsl --install -d Ubuntu-24.04
+wsl -l -v
+ubuntu
+wsl --unregister Ubuntu
+wsl -l -v
+wsl --set-default Ubuntu-24.04
+wsl -l -v
+ubuntu
+wsl -l -v
+wsl --unregister Ubuntu-24.04
+wsl -l -v
+wsl --unregister Ubuntu
+wsl --install -d Ubuntu
+wsl -l -v
+wsl --set-default Ubuntu
+wsl
+clear
+wsl -u chikurin
+clear
+wsl -l -v
+ubuntu
+clear
+ubuntu
+code
+wsl -l -v
+exit
+wsl -l -v
+wsl --unregister Ubuntu
+wsl -l 0v
+wsl -l -v
+cleawr
+wsl --install -d Ubuntu
+ubuntu
+wsl -d Ubuntu-ROS2 -u chikurin
+clear
+wsl -l -v
+wsl --set-default Ubuntu
+wsl -l -v
+wsl -u chikurin -d Ubuntu-ROS2
+exit
+ubuntu
+shutdown /s /t 0
+clear
+ubuntu
+shutdown /s /t 0
+ubuntu
+clear
+wsl -d Ubuntu-ROS2 -u chikurin
+wsl --terminate Ubuntu-ROS2
+wsl -d Ubuntu-ROS2 -u chikurin
+wsl -d Ubuntu-ROS2
+Ubuntu-ROS2
+wsl -l
+ubuntu-ros2
+wsl -l
+wsl --help
+wsl -d Ubuntu-ROS2 confit --default-user chikurin
+wsl -d Ubuntu-ROS2 config --default-user chikurin
+which ubuntu
+ubuntu --help
+dirname --hwlp
+dirname --help
+which ubuntu | path dirname
+path dirname $(which ubuntu)
+path dirname (which ubuntu)
+clear
+which ubuntu
+ls ~\AppData\Local\Microsoft\WindowsApps\
+wslconfig --help
+wslconfig /l
+wslconfig /all
+wslconfig /l /all
+ls ~\AppData\Local\Microsoft\WindowsApps\
+ubuntu config
+ubuntu config --help
+wsl -d Ubuntu-ROS2 -u chikurin
+wsl -d Ubuntu-ROS2
+exit
+ubuntu
+shutdown /r /t 0
+usbipd --list
+clera
+claear
+clear
+usbipd list
+ssh pi@rpi-ubu2.local
+ubuntu
+clear
+ping rpi-ubu2.lan
+ping rpi-ubu2.local
+ssh pi@rpi-ubu2.local
+wsl -d Ubuntu-ROS2
+shutdown /s /t 0
+ls
+clear
+ls
+clear
+wsl -l
+wsl -l -v
+clear
+ubuntu
+shutdown /s /t 0
+cleawr
+clear
+ubuntu
+wsl --shutdown Ubuntu
+ubuntu
+clear
+exit
+cd .local
+ls
+cd ..
+cd .config
+ls
+cd ..
+cd AppData\Roaming\
+ls
+cd nushell
+ls
+code .
+exit
+$env
+$nu
+exit
+$nu
+exit
+config path
+$nu
+$nu.ocnfig-path
+$nu.cocnfig-path
+$nu.cofig-path
+n
+$nu.config-path
+$nu
+$nu.default-config-dir | code
+$nu.default-config-dir
+$nu.default-config-dir | code -
+exit
+pwd
+exit
+clea
+exit
+ls
+clear
+ls -a
+clear
+lsg
+cd .config
+lsg
+code wezterm
+exit
+ls
+clear
+cd ~
+ls
+clear
+lsg
+ls | grid -c
+ls -a | grid -c
+claear
+clear
+exirt
+exit
+config clear
+config --help
+config reset
+code ($nu.default-config-dir)
+ls
+exit
+exit
+ls
+clear
+exit
+ls
+exit
+ubunt
+ubuntu
+shutdown /s /t 0
+cd C:\
+ls
+cd ..
+ls
+exit
+ls
+clear
+ls
+clear
+unity
+exit
+ubuntu
+shutdown /s /t 0
+winget search teams
+winget uninstall microsoft.teams.classic
+winget uninstall --id microsoft.teams.classic
+winget install --id=Microsoft.Teams
+winget install --source Microsoft.Teams
+winget install Microsoft.Teams
+winget install Microsoft.Teams --source winget
+winget uninstall Microsoft.Teams
+winget install Microsoft.Teams --source winget
+winget uninstall Microsoft.Teams
+winget install Microsoft.Teams
+winget install Microsoft.Teams --source winget
+exit
+ubuntu
+exit
+t
+exit
+ls
+cd Downloads
+ls
+clear
+ls
+touch a.csv
+code a.csv
+ls
+help read
+help open
+help a.csv | to md
+help a.csv | to text
+help a.csv | to json
+clear
+open a.csv
+open a.csv | to md
+help to
+exit
+ubuntu
+exit
+ssh pi@cavolinia
+shutdown /s /t 0
+ifconfig
+ubuntu
+ssh pi@cavolinia
+exit
+ext
+exit
+usbipd list
+gsudo usbipd attach -w -b 2-3
+ubuntu
+exit
+exit
+ubuntu
+exit
+git remote add origin git@github.com:GameLab-KSE/ReadOnlyAttribute.git
+git remote -v
+git pull origin main
+ssh git@github.com
+cd ~
+ls
+clear
+cd .ssh
+ls
+code id_rsa.pub
+ssh -T git@githu.com
+ssh -T git@github.com
+exit
+git remote -v
+git pull origin main
+git push -u origin main
+git pull
+git push
+git init
+git add -A
+git commit
+git remote add origin git@github.com:GameLab-KSE/SceneManagement.git
+git push -u origin main
+git remote add origin git@github.com:GameLab-KSE/EssentialTools.git
+git push -u origin main
+exit
+cd Assets\
+git clone git@github.com:GameLab-KSE/EssentialTools.git
+exit
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+exit
+dotnet format
+dotnet format --severity info
+dotnet format --severity info Assembly-CSharp.csproj
+dotnet format --severity info SandBox
+dotnet format --severity info SandBox.sln
+dotnet format SandBox.sln
+dotnet format Assembly-CSharp.csproj
+dotnet format GameLab.EssentialTools.csproj
+dotnet format Assembly-CSharp.csproj
+dotnet format Assembly-CSharp.csproj --include Assets/Scripts
+dotnet format --severity info Assembly-CSharp.csproj --include Assets/Scripts
+dotnet format --severity info Assembly-CSharp.csproj --include Assets/Scripts/
+dotnet format Assembly-CSharp.csproj --include Assets/Scripts/
+dotnet format --version
+dotnet tool install -g dotnet-format
+dotnet format --version
+dotnet-format --version
+which dotnet-format
+dotnet tool install -g dotnet-format --version "7.*"
+dotnet tool uninstall -g dotnet-format
+dotnet tool install -g dotnet-format --version "7.*"
+dotnet tool install -g dotnet-format --version "7.4"
+dotnet tool install -g dotnet-format
+dotnet tool uninstall -g dotnet-format
+clear
+which dotnet
+dotnet format --help
+dotnet format style SandBox.sln
+dotnet format style SandBox.sln -v d
+dotnet format style SandBox.sln -v diag
+clear
+dotnet format -h
+exit
+wezterm
+wezterm .
+clear
+cd Packages
+git clone git@github.com:GameLab-KSE/EssentialTools.git
+dotnet format SandBox.sln
+clear
+cd ..
+dotnet format SandBox.sln
+dotnet format SandBox.sln -v d
+dotnet format GameLab.EssentialTools.csproj -v d
+dotnet format SandBox.sln -v d
+dotnet format style SandBox.sln -v d
+dotnet format whitespace SandBox.sln -v d
+dotnet format analyzer SandBox.sln -v d
+dotnet format analyzers SandBox.sln -v d
+dotnet format style SandBox.sln -v d
+dotnet format analyzers SandBox.sln -v d
+dotnet format whitespace SandBox.sln -v d
+dotnet format SandBox.sln -v d
+dotnet format GameLab.EssentialTools.csproj -v d
+exit
+dotnet format GameLab.EssentialTools.csproj -v d
+cd Packages\EssentialTools\
+dotnet -h
+dotnet sln -h
+dotnet 0h
+dotnet -h
+dotnet build
+dotnet new
+dotnet new list
+dotnet new sln
+clear
+dotnet build EssentialTools.sln
+dotnet build EssentialTools.sln -v
+dotnet build EssentialTools.sln -v d
+dotnet build EssentialTools.sln -v m
+clear
+dotnet build EssentialTools.sln -h
+clear
+dotnet build EssentialTools.sln -v n
+dotnet run
+dotnet run EssentialTools.sln
+clear
+dotnet format EssentialTools.sln
+dotnet format EssentialTools.sln -v d
+dotnet -h
+dotnet new -h
+dotnet new list
+dotnet -h
+dotnet sln -h
+dotnet sln list
+dotnet sln add .
+dotnet -h
+dotnet msbuild
+dotnet msbuild -h
+rm EssentialTools.sln
+dotnet new classlib
+dotnet build EssentialTools.csproj
+dotnet new gitignore
+dotnet format EssentialTools.csproj -v d
+cd Packages\EssentialTools\
+dotnet format -v d
+dotnet format -h
+ls
+clear
+^ls
+clear
+git switch -c gha
+git push -u origin gha
+git switch main
+git pull -p
+git switch -c ci-test
+git push -u origin ci-test
+dotnet format
+git switch main
+git pull -p
+git branch -d gha ci-test
+git branch -a
+git pull -p
+git branch -a
+clear
+dotnet format SandBox.sln
+ubuntu
+eixt
+exit
+winget search github
+winget install github.githubdesktop
+winget install github.cli
+which gh
+where.exe gh
+clear
+exit
+which gh
+gh --help
+gh auth
+gh auth login
+gh repo
+gh repo view
+gh repo view --web
+gh 
+gh browse
+gh issue
+gh issue list
+gh clone
+gh repo
+gh repo clone
+cd Documents\
+ls
+cd MyProjects\
+ls
+cd Practice\
+ls
+gh repo clone Chikurin1014/dtfls
+ls
+cd dtfls
+ls
+gh repo view
+gh repo view --web
+gh repo view
+gh issue list
+cd ..
+rm dtfls\ -rf
+ls
+exit
+git pull
+git status
+git remote -v
+git remote add origin git@github.com:GameLab-KSE/EssentialTools.git
+git remote -v
+git pull origin
+git pull origin main
+git stash
+git status
+git add -A
+git stash
+git pull origin main
+git stash pop
+git stash
+git push
+git push -u origin main
+cd Packages\
+git clone git@github.com:GameLab-KSE/EssentialTools.git
+code EssentialTools\
+git clone git@github.com:GameLab-KSE/EssentialTools.git
+code EssentialTools\
+dotnet format IMDungeon.sln
+dotnet format -v d
+dotnet format --help
+cpear
+clear
+dotnet format -v detaild
+dotnet format -v d
+clear
+dotnet format IMDungeon.sln -v d
+dotnet format IMDungeon.sln
+ssh umiusi
+ssh pi@umiusi.local
+clear
+ssh pi@umiusi.local
+exit
+ssh pi@umiusi.local
+shutdown /r /t 0
+which mise
+winget install msie
+winge tsearch ise
+winget install zig.zig
+zig
+exit
+zig
+clear
+cd Documents/
+ls
+clear
+lg
+clear
+lsg
+cd MyProjects\
+lsg
+claer
+clear
+lsg
+cd Paractice
+cd Practice\
+clear
+lsg
+mkdir Zig
+cd Zig
+mkdir hello
+cd hello
+zig build
+cd ..
+cd hello
+zig init
+ls
+clear
+code .
+which zig
+which zig | get
+which zig | get text
+which zig | get path
+which zig | get path | to text
+which zls
+winget search zls
+winget install zigtools.zls
+winget search mise
+exit
+which zls
+zls
+clear
+winget search zls
+winget show zls
+winget install zigtools.zls
+winget list
+clear
+zls
+exit
+zls
+exit
+which zls
+exit
+zig build hello.zig
+zig build main.zig
+zig build
+zig run
+zig help
+zig run
+zig run main
+zig run --help
+zig run main.zig
+zig run src/main.zig
+clear
+zig run src/main.zig
+zig build
+lsg .zig-cache\
+zig run build.zig
+zig build
+clear
+zig build-exe
+zig build-exe src/main.zig
+./main.exe
+rm main.exe main.exe.obj main.pdb
+clear
+zig test
+zig test src/root.zig
+shutdown /s /t 0
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+shutdown /r /t 0
+ubuntu
+shutdown /s /t 0
+ubuntu
+shutdown /s /t 0
+ubunt
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+winget install docker
+winget install docker.dockerdesktop
+docker-desktop --help
+code .wslconfig
+pw
+pwd
+code .wslconfig
+exit
+exit
+wsl --shutdown Ubuntu
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+wsl --shutdown Ubuntu
+ubuntu
+exit
+ubuntu
+exit
+wsl --list
+ubuntu
+exit
+cd .wslconfig
+ls
+code .wslconfig
+exiy
+exi
+exit
+wsl --shutdown Ubuntu
+ubuntu
+exit
+ubuntu
+exit
+usbipd list
+gsudo usbipd attach -w -b 2-2
+which gsudo
+winget update gsudo
+gsudo usbipd attach -w -b 2-2
+usbipd attach -w -b 2-
+usbipd attach -w -b 2-2
+exit
+gsudo
+clear
+gsudo usbipd bind -b 2-2
+usbipd list
+gsudo usbipd attach -w -b 2-2
+usbipd list
+ubuntu
+exit
+gsudo usbipd detach -b 202
+gsudo usbipd detach -b 2-2
+clear
+ls
+clear
+exit
+ubuntu
+exit
+exi
+exit
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+shutdown /s /t 0
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+shutdown /s /t 0
+ubuntu
+exit
+wsl --shutdown Ubuntu
+wsl --list
+exit
+wsl --list
+wsl --unregister Ubuntu
+wsl --list
+wsl --unregister Ubuntu-ROS2
+wsl --list
+wsl --install -d Ubuntu
+ubunt
+ubuntu
+exit
+ubuntu
+exi
+exit
+shutdown /s /t 0
+ubuntu
+shutdown /s /t 0
+exit
+ubuntu
+shutdown /s /t 0
+ubuntu
+shutdown /s /t 0
+ubuntu
+shutdown /s /t 0
+ubuntu
+exit
+ghci
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+shutdown /s /t 0
+ubunt
+ubuntuy
+ubunu
+ubuntu
+exit
+ubuntu
+exit
+which cargo
+clear
+cd Documents
+ls
+cclear
+clear
+ls
+clear
+lsg
+cd MyProjects\
+lsg
+clera
+clear
+ls
+cd Practice
+ls
+mkdir Rust
+cd Rust\
+clear
+mkdir Bevy
+cd Bevy
+git clone https://github.com/begyengine/bevy example
+git clone https://github.com/bevyengine/bevy example
+cd example\
+ls
+cargo run --example breakout
+rustup show
+rustup update
+cargo run --example breakout
+cd ..
+ls
+clear
+ls
+cargo new hello-bevy
+code hello-bevy
+rm -rf .git .gitignore
+cargo add bevy
+cargo build
+cargo run
+cargo buld
+cargo build
+cargo run
+ls
+cargo new breakout --no-vcs
+cargo new breakout --help
+cargo new breakout --vcs=none
+code breakout\
+cargo add bevy && cargo build
+cargo add bevy
+cargo build
+ubuntu
+exit
+shutdown /s /t 0
+ubuntu
+ls
+cd Documents/Rust
+cd Documents\MyProjects\
+ls
+cd Practice\
+ls
+clear
+cd Rust
+cd Bevy\
+ls
+cd breakout
+code .
+cd ..
+cd example\
+ls
+cd examples
+ls
+lsg
+cd 2d
+ls
+cd ..
+ls
+cd games
+ls
+code breakout.rs
+cd ..
+code .
+ubuntu
+exit
+ubuntu
+shutdown /s /t 0
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+exit
+ubuntu
+shutdown /s /t 0
+ubuntu
+exit
+code .
+exit
+exitt
+exit
+mkdir Documents\MyProjects\Study\3rd-grade\automotive
+ls
+cd Documents\
+clear
+cd MyProjects\Study\3rd-grade\automotive\
+code.
+code .
+exit
+ls -a
+code .latexindentconfig\
+latexindent --version
+tlmgr update
+tlmgr update --list
+tlmgr update --self
+exit
+git status
+exit
+cd Documents/Rust
+cd Documents\MyProjects\Game\
+ls
+clear
+mkdir Bevy
+cd Bevy
+ls
+cd .
+cd ^
+cd |<\n>cd ~
+ls
+clea
+rclear
+clear
+cd Documents\MyProjects\
+ls
+ls Practive
+ls Practice\
+cd Practice
+clear
+cd Rust
+ls
+cd Bevy
+ls
+cd examples
+ls
+cd example
+clear
+ls
+clear
+cargo run --example breakout
+cd ..
+ls
+code hello-bevy\
+.\target\debug\hello-bevy.exe
+cargo run
+echo $?
+cargo run
+exit
+exit
+cd Documents\MyProjects\Practice\Rust\Bevy\
+ls
+cargo new fb-system --vcs=none
+code fb-system\
+cargo add tokio
+exit
+cd ..
+mv Bevy\fb-system 
+mv Bevy\fb-system .
+ls
+ls Bevy
+cd Bevy
+ls
+rm fb-system\
+rm fb-system\ -rf
+cd ..
+ls
+code fb-system\
+cargo add anyhow thiserror
+exit
+cargo run
+cargo add plotters
+ls
+rm -rf fb-system\
+exit
+which gcc
+exit
+tlmgr install listings
+upadte-tlmgr-latest --update
+upadte-tlmgr-latest.exe --update
+tlmgr --version
+exit
+tlmgr --version
+which tlmgr
+which -a tlmgr
+exit
+which tlmgr
+exit
+which tlmgr
+exit
+which tlmgr
+clear
+tlmgr install listings jvlisting latexmk url cite physics2
+tlmgr install siunitx
+exit
+tlmgr install utf8add collection-langjapanese
+exit
+cargo install tectonic
+tectonic -X
+winget search pkgconfig
+winget list
+winget uninstall --all
+winget list
+winget uninstall --all 7zip
+winget uninstall --all autodeskaccess
+winget uninstall --all Autodesk
+winget uninstall --all Autodesk.AutodeskAccess
+winget uninstall --all docker.dockerdesktop kicad.kicad git.git
+winget lsit
+winget list
+winget uninstall --all firefox thunderbird
+winget uninstall --all Microsoft.VCRedist.2005.x86 Codice.PlasticSCM.Enterprise Unity.UnityHub marha.VcXsrv OpenJS.NodeJS.LTS Musescore.Musescore GitHub.GitLFS Starship.Starship Microsoft.OpenSSH.Beta GitHub.cli Microsoft.VCRedist.2010.x64 dorssel.usbipd-win gerardog.gsudo JetBrains.CLion  Google.Chrome.EXE  Microsoft.Edge  Microsoft.VCRedist.2013.x64 Microsoft.DotNet.SDK.7 Microsoft.VCRedist.2015+.x86 Python.Launcher Microsoft.DotNet.AspNetCore.3_1 Microsoft.VCRedist.2005.x86  Microsoft.DotNet.Runtime.3_1 Microsoft.VCRedist.2008.x86 Microsoft.VCRedist.2013.x86 Microsoft.DotNet.DesktopRuntime.8
+exit
+exit
+code ~/AppData/Roaming/nushell/cfg.nu
+code ~/AppData/Roaming/nushell/
+exit
+exit
+pwsh
+exit
+which tectonic
+exit
+which tectonic
+tectonic --help
+clear
+ls
+clear
+ls
+clear
+tectonic --help
+tectonic -X --help
+exit
+ls
+which tectonic
+cear
+clear
+which ls
+clear
+show $env.Path
+$env.Path
+which tectonic
+exi
+texit
+exit
+cd Documents\MyProjects\Practice\Tex\tectonic\
+clear
+ls
+clear
+tectonic -X init
+tectonic -X build
+cd Downloads
+ls
+cleear
+clear
+cat shopping_list
+show shopping_list
+show shopping.csv
+open shopping.csv
+open shopping.csv --text
+help open
+open shopping.csv --raw
+open shopping.csv
+open shopping.csv | to --json
+help to
+open shopping.csv | to md
+open shopping.csv | to json
+open shopping.csv | to md
+open shopping.csv | to json | to md
+open shopping.csv | to toml
+open shopping.csv | to yaml
+open shopping.csv | to yaml | clip
+exit
+gsudo choco uninstall discord
+gsudo choco install discord
+discors
+discord
+gsudo choco uninstall discord
+discord
+gsudo choco install discord
+exit
+ls
+exit
+code ~/.config/wezterm
+exit
+ls
+clear
+exit
+gsudo choco install spotify
+ls
+exit
+s
+ls
+clear
+ls
+exit
+clear
+exit
+ls
+clear
+lsg
+clear
+exit
+lsg
+dotter help
+scoop install main/ba
+scoop install main/bat
+bat
+ls | bat
+tree . | bat
+bat help
+bat --help
+clear
+ls
+clear
+cd Documents\MyProjects\Rogy\Unbar
+ls
+cd control
+ls
+lsg
+cd unbar-rs
+ls
+cd ~
+dotter help
+git clone git@github.com:Chikurin1014/dotfiles.git dotfiles
+cd dotfiles
+git status
+git switch -c windows
+git push -u origin main
+git switch main
+git submodule update --remote
+git push
+git switch windows
+git push -u origin windows
+git branch -a
+git switch main
+git status
+git submodule -v
+git submodule init
+git submodule update --remote
+git status
+lazygit
+scoop search lazygit
+scoop install extras/lazygit
+lazygit
+clear
+git status
+clear
+git status
+git commit
+ls
+cd ..
+code dotfiles
+cd ..
+cd ~
+clear
+git clone git@github.com:Chikurin1014/dtfls.git
+cd dtfls
+ls
+git switch -c windows
+git branch -a
+which mise
+scoop install main/mise
+dotter init
+code .
+zsh
+cd ..
+cd dotfiles
+git submodule --help
+git submodule
+git submodule set-branch files windows
+git submodule set-branch files --branch windows
+code ~/.config/wezterm
+mv ~/.config/wezterm ~/.config/wezterm_old
+mv ~/.config/wezterm_old ~/.config/wezterm.old
+ls ~/.config
+ls ~/.config/wezterm
+tree ~/.config/wezterm
+ls ~/.config/wezterm --tree
+ls --tree ~/.config/wezterm
+ls ~/.config/wezterm/keybindings
+ls ~/.config/wezterm/themes
+ls
+cd ~/.config
+ls
+cat starship.toml
+bat starship.toml
+mv starship.toml starship.toml.old
+ls
+ls scoop
+bat scoop\config.json
+$env.config
+/.dotter/cache
+clear
+cd C:\Users\Chikurin\AppData\Roaming\
+ls
+clear
+lsg
+lsg wezterm
