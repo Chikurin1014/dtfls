@@ -17,7 +17,7 @@ end
 
 -- This is where you actually apply your config choices
 
-config.default_prog = { 'zsh', '-l' }
+config.default_prog = { 'nu', '-l' }
 config.initial_rows = 35
 config.initial_cols = 120
 config.window_decorations = 'RESIZE'
