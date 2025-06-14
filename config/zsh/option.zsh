@@ -1,3 +1,5 @@
+setopt nonomatch # コマンドがblobのワイルドカードを含んでいても、必要以上にファイル名として展開しない
+
 # keybind
 bindkey -d # default keybind
 
