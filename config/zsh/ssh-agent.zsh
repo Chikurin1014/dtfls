@@ -1,9 +1,12 @@
-if [ $(ps aux | grep ssh-agent | grep -v grep | wc -l) -eq 0 ]; then
-    rm -f /tmp/ssh-agent.sock
-    eval $(ssh-agent -a /tmp/ssh-agent.sock) &> /dev/null
-    for file in ~/.ssh/*.pub; do
-        ssh-add "${file%.pub}" > /dev/null
-    done
-else
-    export SSH_AUTH_SOCK=/tmp/ssh-agent.sock;
-    export SSH_AGENT_PID=$(pidof ssh-agent);
+if [ -f ~/.ssh-agent ]; then
+    source ~/.ssh-agent > /dev/null
+fi
+
+if [ -z "$SSH_AGENT_PID" ] || ! kill -0 "$SSH_AGENT_PID" > /dev/null; then
+    ssh-agent > ~/.ssh-agent
+    source ~/.ssh-agent > /dev/null
+fi
+
+for file in ~/.ssh/*.pub; do
+    ssh-add "${file%.pub}" > /dev/null 2>&1
+done
