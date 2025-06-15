@@ -48,6 +48,9 @@ apply = ['defer']
 github = "ryutok/rust-zsh-completions"
 apply = ['defer']
 
+[plugins.mise]
+inline = 'eval "$(mise activate zsh)"'
+
 [plugins.eza]
 inline = "alias ls='eza --icons'"
 
