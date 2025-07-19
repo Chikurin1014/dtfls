@@ -5,6 +5,7 @@
     ".clang-format".source                        = src + "/files/clang-format";
     ".gitconfig".source                           = src + "/files/gitconfig";
     ".config/starship.toml".source                = src + "/files/config/starship.toml";
+    ".config/ghostty/config".source              = src + "/files/config/ghostty/config";
     ".config/git/commit_template".source          = src + "/files/config/git/commit_template";
     ".config/mise/config.toml".source             = src + "/files/config/mise/config.toml";
     ".config/sheldon/plugins.toml".source         = src + "/files/config/sheldon/plugins.toml";
