@@ -10,3 +10,15 @@
 
 [commit]
     template = "~/.config/git/commit_template"
+
+[pager]
+    difftool = true
+
+[diff]
+    tool = difftastic
+    external = difft
+
+[difftool "difftastic"]
+    prompt = false
+    cmd = difft "$MERGED" "$LOCAL" "abcdef1" "100644" "$REMOTE" "abcdef2" "100644"
+
