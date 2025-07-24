@@ -28,7 +28,7 @@ format = "[$hostname]($style)"
 
 [directory]
 style = "fg:#FFB6C1"
-read_only = "\uf023"  # nf-fa-lock
+read_only = "\uf023 "                                      #  (nf-fa-lock)
 read_only_style = "fg:#ABB2BF"
 format = "[$read_only]($read_only_style) [$path]($style) "
 truncate_to_repo = true
@@ -37,7 +37,7 @@ truncation_length = 0
 [git_branch]
 always_show_remote = false
 format = "[$symbol$branch(:$remote_branch)]($style) "
-symbol = "\uf418"  # nf-oct-git_branch
+symbol = "\ue725 "                                    #  (nf-dev-git_branch)
 style = "fg:#98C379"
 truncation_length = 9223372036854775807
 truncation_symbol = "…"
@@ -51,7 +51,7 @@ format = '[\($tag$hash\)]($style) '
 only_detached = true
 tag_disabled = true
 tag_max_candidates = 0
-tag_symbol = "\uf412 "  # nf-oct-tag
+tag_symbol = "\uf412 "              #  (nf-oct-tag)
 disabled = false
 style = "fg:#98C379"
 
@@ -68,24 +68,23 @@ format = '[\($state( $progress_current/$progress_total)\) ]($style)'
 disabled = false
 
 [git_status]
-format = '[\[$all_status$ahead_behind\] ]($style)'
+format = '[$ahead_behind  $all_status]($style)'
 conflicted = "= "
-ahead = "⇡"
-behind = "⇣"
-diverged = "⇕ "
-up_to_date = "\uf021 "  # nf-fa-refresh
-untracked = "? "
-stashed = "% "
-modified = "* "
-# modified = "\uf5c8"  # nf-mdi-border_color
-staged = "+ "
-renamed = "» "
-deleted = "✘ "
+ahead = "\u21e3 "                               # ⇡
+behind = "\u21e1 "                              # ⇣
+diverged = "\ue728 "                            #  (nf-dev-git_compare)
+up_to_date = "\uf021 "                          #  (nf-fa-refresh)
+untracked = "\uf128 "                           #  (nf-fa-question)
+stashed = "\uf0d8 "                             #  (nf-fa-caret_up)
+modified = "\uf044 "                            #  (nf-fa-edit)
+renamed = "\uf45a "                             #  (nf-oct-diff_renamed)
+deleted = "\u2718 "                             # ✘
+staged = "\uf067 "                              #  (nf-fa-plus)
 style = "fg:#98C379"
 ignore_submodules = false
 disabled = false
 
 [character]
 format = "$symbol "
-success_symbol = "[\uf054](green)"     # \uf054: nf-fa-chevron_right
-error_symbol = "[\uf00d \uf054](red)"  # \uf00d: nf-fa-remove
+success_symbol = "[\uf00c \uf054](green)" #     (nf-fa-check nf-fa-chevron_right)
+error_symbol = "[\uf00d \uf054](red)"     #   (nf-fa-remove nf-fa-chevron_right)

@@ -44,6 +44,10 @@ apply = ['defer']
 github = "zsh-users/zsh-autosuggestions"
 apply = ['defer']
 
+[plugins.zsh-abbr]
+github = "olets/zsh-abbr"
+apply = ['source']
+
 [plugins.zsh-autosuggestions-strategy]
 inline = "export ZSH_AUTOSUGGEST_STRATEGY=(history completion)"
 
@@ -55,7 +59,7 @@ apply = ['defer']
 inline = 'eval "$(mise activate zsh)"'
 
 [plugins.eza]
-inline = "alias ls='eza --icons'"
+inline = "alias ls='eza --icons --git'"
 
 [plugins.bat]
 inline = "alias cat=bat"
@@ -77,4 +81,3 @@ inline = 'eval "$(starship init zsh)"'
 
 [plugins.zellij_completions]
 inline = "source ~/.config/zellij/completion.zsh"
-
