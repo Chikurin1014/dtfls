@@ -44,6 +44,9 @@ apply = ['defer']
 github = "zsh-users/zsh-autosuggestions"
 apply = ['defer']
 
+[plugins.zsh-autosuggestions-strategy]
+inline = "export ZSH_AUTOSUGGEST_STRATEGY=(history completion)"
+
 [plugins.rust-zsh-completions]
 github = "ryutok/rust-zsh-completions"
 apply = ['defer']

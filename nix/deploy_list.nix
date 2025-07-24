@@ -21,6 +21,7 @@
     ".config/zellij/completion.zsh".source        = src + "/files/config/zellij/completion.zsh";
     ".config/zsh/alias.zsh".source                = src + "/files/config/zsh/alias.zsh";
     ".config/zsh/completion.zsh".source           = src + "/files/config/zsh/completion.zsh";
+    ".config/zsh/hook.zsh".source                 = src + "/files/config/zsh/hook.zsh";
     ".config/zsh/option.zsh".source               = src + "/files/config/zsh/option.zsh";
     ".config/zsh/ssh-agent.zsh".source            = src + "/files/config/zsh/ssh-agent.zsh";
     ".config/zsh/style.zsh".source                = src + "/files/config/zsh/style.zsh";
