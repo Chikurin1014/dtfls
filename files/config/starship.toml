@@ -70,10 +70,10 @@ disabled = false
 [git_status]
 format = '[$ahead_behind  $all_status]($style)'
 conflicted = "= "
-ahead = "\u21e3 "                               # ⇡
-behind = "\u21e1 "                              # ⇣
+ahead = "\u21e1 "                               # ⇡
+behind = "\u21e3 "                              # ⇣
 diverged = "\ue728 "                            #  (nf-dev-git_compare)
-up_to_date = "\uf021 "                          #  (nf-fa-refresh)
+up_to_date = "\uf05d "                          #  (nf-fa-circle_check)
 untracked = "\uf128 "                           #  (nf-fa-question)
 stashed = "\uf0d8 "                             #  (nf-fa-caret_up)
 modified = "\uf044 "                            #  (nf-fa-edit)
