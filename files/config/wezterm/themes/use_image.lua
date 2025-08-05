@@ -14,24 +14,64 @@ theme.window_frame = {
         { family = 'FirgeNerd Console', weight = 'Bold', assume_emoji_presentation = true }
     },
     font_size = 11.0,
-    active_titlebar_bg = '#46507C',
-    inactive_titlebar_bg = '#46507C',
+    active_titlebar_bg = 'none',
+    inactive_titlebar_bg = 'none',
+    border_left_color = '#494567',
+    border_right_color = '#494567',
+    border_bottom_color = '#494567',
+    border_top_color = '#494567',
+    border_left_width = '1px',
+    border_right_width = '1px',
+    border_bottom_height = '1px',
+    border_top_height = '1px',
 }
+theme.tab_bar_at_bottom = false
+theme.show_new_tab_button_in_tab_bar = false
+theme.show_close_tab_button_in_tabs = false
 theme.background = {
     {
         source = { File = home .. '/Pictures/wezterm/bg.png' },
         hsb = {
-            hue = 1.0,
+            hue = 0.95,
             saturation = 1.0,
-            brightness = 0.1,
+            brightness = 0.6,
         },
         height = 'Cover',
         width = 'Cover',
         vertical_align = 'Middle',
-        horizontal_align = 'Center',
-        opacity = 0.90,
+        horizontal_align = 'Left',
+        opacity = 0.95,
         attachment = 'Fixed'
     }
 }
+theme.colors = {
+    tab_bar = {
+        inactive_tab_edge = 'none'
+    }
+}
+theme.format_tab_title = function(tab, tabs, panes, config, hover, max_width)
+    local title = tab.active_pane.title
+    local background = '#555555'
+    local foreground = '#CCCCCC'
+    if (tab.is_active) then
+        background = '#9e6aeb'
+    end
+    local edge_background = 'none'
+    local edge_foreground = background
+
+    return {
+        { Background = { Color = edge_background } },
+        { Foreground = { Color = edge_foreground } },
+        { Text = wezterm.nerdfonts.ple_lower_right_triangle },
+
+        { Background = { Color = background } },
+        { Foreground = { Color = foreground } },
+        { Text = ' ' .. title .. ' ' },
+
+        { Background = { Color = edge_background } },
+        { Foreground = { Color = edge_foreground } },
+        { Text = wezterm.nerdfonts.ple_upper_left_triangle },
+    }
+end
 
 return theme
