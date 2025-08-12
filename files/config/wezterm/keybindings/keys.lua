@@ -15,7 +15,6 @@ local keys = {
     { key = '>', mods = 'CTRL', action = act.ActivateTabRelative(1) },
     { key = 'p', mods = 'CTRL', action = act.ActivateTabRelative(-1) },
     { key = '<', mods = 'CTRL', action = act.ActivateTabRelative(-1) },
-    { key = 'w', mods = 'CTRL', action = act.CloseCurrentTab{ confirm = true } },
 
     { key = 'c', mods = 'SHIFT|CTRL', action = act.CopyTo 'Clipboard' },
     { key = 'v', mods = 'SHIFT|CTRL', action = act.PasteFrom 'Clipboard' },
@@ -24,6 +23,7 @@ local keys = {
     { key = 'k', mods = 'SHIFT|CTRL', action = act.SplitPane{ direction =  'Up' } },
     { key = 'l', mods = 'SHIFT|CTRL', action = act.SplitPane{ direction =  'Right' } },
     { key = 't', mods = 'SHIFT|CTRL', action = act.SpawnTab 'CurrentPaneDomain' },
+    { key = 'w', mods = 'SHIFT|CTRL', action = act.CloseCurrentTab{ confirm = true } },
     { key = 'n', mods = 'SHIFT|CTRL', action = act.SpawnWindow },
     { key = 'p', mods = 'SHIFT|CTRL', action = act.ActivateCommandPalette },
     { key = 'phys:Space', mods = 'SHIFT|CTRL', action = act.TogglePaneZoomState },
